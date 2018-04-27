@@ -18,6 +18,11 @@ Tensorflow 1.5.1: `conda install -c conda-forge tensorflow`
 
 Flask 0.12.2: `pip install Flask`
 
+What might also work:
+```
+pip install -r requirements/requirements.txt
+```
+
 ### Installing
 
 Clone the repository and navigate to the downloaded folder.
