@@ -1,4 +1,4 @@
-# Project Title
+# Dog Breed Classifier Web App
 
 The idea of this project is a simple web application for the dog breed classifier developed in my dog-project. Caveat: This is very rudimentary code and its not heavily tested. This is also my first web development project, so there will be a lot of things to improve and I am also happy to receive suggestions. But I am not sure how strongly I am going to develop this project in future.
 
@@ -11,6 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 For this project, I used:
+
 Keras 2.1.5: `conda install -c conda-forge keras`
 
 Tensorflow 1.5.1: `conda install -c conda-forge tensorflow`
@@ -38,6 +39,9 @@ export FLASK_APP=dogbreed_flask
 export FLASK_DEBUG=0
 flask run
 ```
+
+FLASK_DEBUG=0 has to set, as otherwise issues with loading a keras model occur, which is discussed and observed by spearsem on https://github.com/keras-team/keras/issues/5640.
+
 
 ## License
 
