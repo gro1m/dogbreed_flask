@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Your photo: </h1>
+  <div>
+    <!--    <img src=" {{url_for('send_image', filename=image_name)}}"> -->
+    img src="{{resized_img_src(url_for('send_image', filename=image_name), width=400, height=300, quality=95)}}" />
+  </div>
+<h1> Output of dog breed classifier: </h1>
+  <div>
+    <h2>{{ text_str }} </h2>
+  </div>
+</body>
+</html>
