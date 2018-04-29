@@ -34,11 +34,11 @@ export FLASK_DEBUG=0
 ```
 flask run 
 ```
-7. Navigate to `http://localhost:5000/' in a web-browser.
+7. Navigate to `http://localhost:5000/` in a web-browser.
 8. Choose an image file on your computer by pressing the first button and then press the `Upload!` button.
 9. Wait and then see the classification of the image by the dog breed classifier.
 
-__NOTE:__ FLASK_DEBUG=0 has to set, as otherwise issues with loading a keras model occur, which is discussed and observed by spearsem on https://github.com/keras-team/keras/issues/5640.
+__NOTE:__ FLASK_DEBUG=0 has to be set, as otherwise issues with loading a keras model occur, which is discussed and observed by spearsem on https://github.com/keras-team/keras/issues/5640.
 
 ## License
 
