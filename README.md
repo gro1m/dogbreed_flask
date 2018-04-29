@@ -6,47 +6,39 @@ The idea of this project is a simple web application for the dog breed classifie
 
 These instructions will get you a copy of the project up and running on your local machine.
 
-### Prerequisites
+### Instructions
 
-What things you need to install the software and how to install them
-
-For this project, I used:
-
-Keras 2.1.5: `conda install -c conda-forge keras`
-
-Tensorflow 1.5.1: `conda install -c conda-forge tensorflow`
-
-Flask 0.12.2: `pip install Flask`
-
-What might also work:
-```
-pip install -r requirements/requirements.txt
-```
-
-### Installing
-
-Clone the repository and navigate to the downloaded folder.
+1. Clone the repository and navigate to the project folder:
 ```	
 git clone https://github.com/gro1m/dogbreed_flask
-cd dog-project
+cd dogbreed_flask
 ```
-
-## Running the tests
-No tests for this system.
-
-## Deployment
-Follow the guidelines on http://flask.pocoo.org/docs/0.12/tutorial/packaging/, but set `export FLASK_DEBUG=0`.
-So, in essence:
+2. Set up a virtual environment (called `test-env` here as an example):
+```
+conda create --name test-env python=3.6 anaconda
+```
+3. Install the project requirements located in the bash script requirements.sh:
+```
+./requirements/requirements.sh
+```
+4. Execute setup.py:
 ```
 pip install --editable .
-cd dogbreed_flask
+```
+5. Set environment variables:
+```
 export FLASK_APP=dogbreed_flask
 export FLASK_DEBUG=0
-flask run
 ```
+6. Run the flask application:
+```
+flask run 
+```
+7. Navigate to `http://localhost:5000/' in a web-browser.
+8. Choose an image file on your computer by pressing the first button and then press the `Upload!` button.
+9. Wait and then see the classification of the image by the dog breed classifier.
 
-FLASK_DEBUG=0 has to set, as otherwise issues with loading a keras model occur, which is discussed and observed by spearsem on https://github.com/keras-team/keras/issues/5640.
-
+__NOTE:__ FLASK_DEBUG=0 has to set, as otherwise issues with loading a keras model occur, which is discussed and observed by spearsem on https://github.com/keras-team/keras/issues/5640.
 
 ## License
 
